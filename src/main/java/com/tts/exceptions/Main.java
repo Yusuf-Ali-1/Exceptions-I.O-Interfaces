@@ -90,7 +90,7 @@ public class Main {
         try{
             String userName = kb.nextLine();
             if(userName.charAt(0) != 'L'){
-                throw new LIsNotFirstCharacterException("The first character in your name is not L");
+                throw new LIsNotFirstCharacterException("The first character in your name is not 'L'");
             }
 
         } catch (LIsNotFirstCharacterException err){
