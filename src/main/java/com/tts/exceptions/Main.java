@@ -102,7 +102,8 @@ public class Main {
 
 
         int result = divide();
-        System.out.println(result);
+        System.out.println("The result of the division is: " + result);
+
 
         try {
             // here we attempt any code we want to run
