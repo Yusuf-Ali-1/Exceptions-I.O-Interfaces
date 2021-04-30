@@ -30,6 +30,23 @@ public class Main {
         return s.nextInt();
     }
 
+    public static int getIntLBYL() {
+        Scanner s = new Scanner(System.in);
+        boolean isValid = true;
+        System.out.println("Please enter a number.");
+        String input = s.next();
+        for(int i = 0; i<input.length(); i++) {
+            if(!Character.isDigit(input.charAt(i))) {
+                isValid = false;
+                break;
+            }
+        }
+        if(isValid) {
+            return Integer.parseInt(input);
+        }
+        return 0;
+    }
+
 
     public static void main(String[] args) {
 
@@ -43,14 +60,18 @@ public class Main {
 
 
 
-        int x = 100;
-        int y = 0;
-        System.out.println(divideLBYL(x, y));
-        System.out.println(divideEAFP(x, y));
+        int a = 100;
+        int b = 0;
+        System.out.println(divideLBYL(a, b));
+        System.out.println(divideEAFP(a, b));
 
 
-        int z = getInt();
-        System.out.println("z is " + z);
+        int c = getInt();
+        System.out.println("z is " + c);
+
+
+        int d = getIntLBYL();
+        System.out.println("a is " + d);
     }
 
 
