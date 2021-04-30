@@ -59,6 +59,19 @@ public class Main {
         }
     }
 
+    private static int divide() {
+        int x = getInt();
+        int y = getInt();
+        System.out.println("x is " + x + ", y is " + y);
+        return x / y;
+    }
+
+    private static int getInt2() {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Please enter a number ");
+        return s.nextInt();
+    }
+
     public static void main(String[] args) {
 
 //        Scanner scanner = new Scanner(System.in);
@@ -87,10 +100,17 @@ public class Main {
 
         int e = getIntEAFP();
         System.out.println("e is " + e);
+
+
+        int result = divide();
+        System.out.println(result);
     }
 
 
     }
+
+
+
 
 
 
