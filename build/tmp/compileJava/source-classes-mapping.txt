@@ -4,7 +4,11 @@ com/tts/io/ReadConsole.java
  com.tts.io.ReadConsole
 com/tts/io/Main.java
  com.tts.io.Main
-com/tts/exceptions/Main.java
- com.tts.exceptions.Main
 com/tts/exceptions/LIsNotFirstCharacterException.java
  com.tts.exceptions.LIsNotFirstCharacterException
+com/tts/exceptions/Main.java
+ com.tts.exceptions.Main
+com/tts/exceptions/GreetNeighbor.java
+ com.tts.exceptions.GreetNeighbor
+com/tts/exceptions/SayProperGreetingException.java
+ com.tts.exceptions.SayProperGreetingException
