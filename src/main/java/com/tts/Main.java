@@ -71,7 +71,7 @@ public class Main {
 
 
         int d = getIntLBYL();
-        System.out.println("a is " + d);
+        System.out.println("d is " + d);
     }
 
 
