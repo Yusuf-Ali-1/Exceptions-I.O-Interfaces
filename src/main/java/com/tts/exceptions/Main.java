@@ -26,9 +26,18 @@ public class Main {
         }
     }
 
-    public static int getInt() {
+
+    private static int getInt() {
         Scanner s = new Scanner(System.in);
-        return s.nextInt();
+        System.out.println("Please enter a number");
+        while(true) {
+            try {
+                return s.nextInt();
+            } catch(InputMismatchException e) {
+                s.nextLine(); // read past end of line, move to next line
+                System.out.println("Error - please enter a number");
+            }
+        }
     }
 
     public static int getIntLBYL() {
@@ -80,7 +89,7 @@ public class Main {
 
 
         int c = getInt();
-        System.out.println("z is " + c);
+        System.out.println("c is " + c);
 
 
         int d = getIntLBYL();
@@ -94,6 +103,18 @@ public class Main {
         int result = divide();
         System.out.println(result);
 
+        try {
+            String[] fruit = new String[2];
+            fruit[0] = "apple";
+            fruit[1] = "grapes";
+            System.out.println("Access element three :" + fruit[3]);
+        } catch (ArrayIndexOutOfBoundsException error) {
+            System.out.println("Exception thrown  :" + error);
+        } finally {
+            System.out.println("Finally, out of the block");
+        }
     }
 
-}
+    }
+
+
