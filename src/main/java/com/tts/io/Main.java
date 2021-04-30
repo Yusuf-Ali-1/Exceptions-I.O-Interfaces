@@ -1,6 +1,5 @@
 package com.tts.io;
-import java.io.*;
-import java.util.InputMismatchException;
+
 import java.util.Scanner;
 
 public class Main {

@@ -3,6 +3,7 @@ package com.tts.exceptions;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
 public class Main {
 
     private static int divide(int x, int y) {
@@ -104,6 +105,9 @@ public class Main {
         System.out.println(result);
 
         try {
+            // here we attempt any code we want to run
+            // that may throw an exception
+
             String[] fruit = new String[2];
             fruit[0] = "apple";
             fruit[1] = "grapes";
