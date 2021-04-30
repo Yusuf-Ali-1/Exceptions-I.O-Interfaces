@@ -82,6 +82,25 @@ public class Main {
         return s.nextInt();
     }
 
+    public static void acceptName(){
+        Scanner kb = new Scanner(System.in);
+        System.out.println("Please input your name: ");
+
+
+        try{
+            String userName = kb.nextLine();
+            if(userName.charAt(0) != 'L'){
+                throw new LIsNotFirstCharacterException("The first character in your name is not L");
+            }
+
+        } catch (LIsNotFirstCharacterException err){
+            err.printStackTrace();
+
+        }
+
+        System.out.println("End of method");
+    }
+
     public static void main(String[] args) {
         int a = 100;
         int b = 0;
@@ -108,7 +127,6 @@ public class Main {
         try {
             // here we attempt any code we want to run
             // that may throw an exception
-
             String[] fruit = new String[2];
             fruit[0] = "apple";
             fruit[1] = "grapes";
@@ -118,8 +136,12 @@ public class Main {
         } finally {
             System.out.println("Finally, out of the block");
         }
+
+        acceptName();
     }
 
-    }
+
+
+}
 
 
