@@ -1,5 +1,6 @@
 package com.tts;
 import java.io.*;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -48,6 +49,16 @@ public class Main {
     }
 
 
+    public static int getIntEAFP() {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Please enter a number.");
+        try {
+            return s.nextInt();
+        } catch(InputMismatchException e) {
+            return 0;
+        }
+    }
+
     public static void main(String[] args) {
 
 //        Scanner scanner = new Scanner(System.in);
@@ -72,6 +83,10 @@ public class Main {
 
         int d = getIntLBYL();
         System.out.println("d is " + d);
+
+
+        int e = getIntEAFP();
+        System.out.println("e is " + e);
     }
 
 
